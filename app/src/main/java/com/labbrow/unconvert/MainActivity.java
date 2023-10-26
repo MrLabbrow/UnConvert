@@ -23,19 +23,27 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         EditText = findViewById(R.id.EditText);
 
-       button.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-//               Toast.makeText(MainActivity.this, "Hi Click Listener worked!", Toast.LENGTH_SHORT).show();
-                String s = EditText.getText().toString();
-                int kg = Integer.parseInt(s);
-                double pount = 2.205 * kg;
-                textView.setText("The constranting value in pounds is: \n" + pount + "w" );
-
-
-           }
-       });
+//       button.setOnClickListener(new View.OnClickListener() {
+//           @Override
+//           public void onClick(View v) {
+////               Toast.makeText(MainActivity.this, "Hi Click Listener worked!", Toast.LENGTH_SHORT).show();
+//                String s = EditText.getText().toString();
+//                int kg = Integer.parseInt(s);
+//                double pount = 2.205 * kg;
+//                textView.setText("The constranting value in pounds is: \n" + pount + "w" );
+//
+//
+//           }
+//       });
 
 
     }
+
+    public void calculate(View view){
+        String s = EditText.getText().toString();
+        int kg = Integer.parseInt(s);
+        double pount = 2.205 * kg;
+        textView.setText("The constranting value in pounds is: \n" + pount + "w" );
+    }
+
 }

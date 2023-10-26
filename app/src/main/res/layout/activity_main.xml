@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:gravity="center"
         android:inputType="number"
         android:textColor="#DF1E1E"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,27 +19,28 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="133dp"
         android:layout_height="55dp"
+        android:onClick="calculate"
         android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditText"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.288" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="364dp"
         android:layout_height="81dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:gravity="center"
         android:textColor="#9C27B0"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,11 +51,11 @@
         android:layout_width="261dp"
         android:layout_height="53dp"
         android:gravity="center"
-        android:text="Enter KG Value"
+        android:text="KG to Pounds"
         android:textColor="#673AB7"
         android:textColorHighlight="#673AB7"
         android:textColorHint="#673AB7"
-        android:textSize="34sp"
+        android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/EditText"
         app:layout_constraintEnd_toEndOf="parent"
