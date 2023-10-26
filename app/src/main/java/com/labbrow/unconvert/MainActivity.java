@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 String s = EditText.getText().toString();
                 int kg = Integer.parseInt(s);
                 double pount = 2.205 * kg;
-                textView.setText("The constranting value in pounds is " + pount );
+                textView.setText("The constranting value in pounds is: \n" + pount + "w" );
 
 
            }
